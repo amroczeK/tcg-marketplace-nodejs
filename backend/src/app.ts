@@ -3,9 +3,6 @@ import session from "express-session";
 import compression from "compression";
 import MongoStore from "connect-mongo";
 import mongoose, { ConnectOptions } from "mongoose";
-import path from "path";
-import dotenv from "dotenv";
-dotenv.config({ path: path.join(__dirname, ".env") });
 import { SESSION_SECRET, MONGODB_URI } from "./util/secrets";
 
 // Create Express server
@@ -42,5 +39,6 @@ app.use(
     }),
   })
 );
+
 
 export default app;

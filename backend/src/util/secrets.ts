@@ -1,4 +1,7 @@
+import path from "path";
 import logger from "./logger";
+import dotenv from "dotenv";
+dotenv.config({ path: path.join(__dirname, ".env") });
 
 export const ENVIRONMENT = process.env.NODE_ENV;
 const prod = ENVIRONMENT === "production"; // Anything else is treated as 'dev'

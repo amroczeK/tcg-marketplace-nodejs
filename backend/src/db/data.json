@@ -1,0 +1,428 @@
+[
+    {
+        "name": "Absol G",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Basic"
+        ],
+        "hp": "70",
+        "types": [
+            "Darkness"
+        ],
+        "attacks": [
+            {
+                "name": "Feint Attack",
+                "cost": [
+                    "Darkness"
+                ],
+                "convertedEnergyCost": 1,
+                "damage": "",
+                "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+            },
+            {
+                "name": "Doom News",
+                "cost": [
+                    "Darkness",
+                    "Colorless",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 3,
+                "damage": "",
+                "text": "Return all Energy cards attached to Absol G to your hand. The Defending Pokémon is Knocked Out at the end of your opponent's next turn."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fighting",
+                "value": "×2"
+            }
+        ],
+        "resistances": [
+            {
+                "type": "Psychic",
+                "value": "-20"
+            }
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/pl3/1.png",
+            "large": "https://images.pokemontcg.io/pl3/1_hires.png"
+        }
+    },
+    {
+        "name": "Aerodactyl",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Stage 1"
+        ],
+        "hp": "70",
+        "types": [
+            "Colorless"
+        ],
+        "abilities": [
+            {
+                "name": "Reactive Protection",
+                "text": "Any damage done to Aerodactyl by attacks from your opponent's Pokémon is reduced by 10 for each React Energy card attached to Aerodactyl (after applying Weakness and Resistance).",
+                "type": "Poké-Body"
+            }
+        ],
+        "attacks": [
+            {
+                "name": "Power Blow",
+                "cost": [
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 1,
+                "damage": "10+",
+                "text": "Does 10 damage plus 10 more damage for each Energy attached to Aerodactyl."
+            },
+            {
+                "name": "Speed Stroke",
+                "cost": [
+                    "Colorless",
+                    "Colorless",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 3,
+                "damage": "40",
+                "text": "During your opponent's next turn, prevent all effects, including damage, done to Aerodactyl by attacks from your opponent's Pokémon-ex."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Lightning",
+                "value": "×2"
+            }
+        ],
+        "resistances": [
+            {
+                "type": "Fighting",
+                "value": "-30"
+            }
+        ],
+        "images": {
+            "small": "https://images.pokemontcg.io/ex12/1.png",
+            "large": "https://images.pokemontcg.io/ex12/1_hires.png"
+        }
+    },
+    {
+        "name": "Weedle",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Basic"
+        ],
+        "hp": "50",
+        "types": [
+            "Grass"
+        ],
+        "attacks": [
+            {
+                "name": "Multiply",
+                "cost": [
+                    "Grass"
+                ],
+                "convertedEnergyCost": 1,
+                "damage": "",
+                "text": "Search your deck for Weedle and put it onto your Bench. Shuffle your deck afterward."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fire",
+                "value": "×2"
+            }
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/xy5/1.png",
+            "large": "https://images.pokemontcg.io/xy5/1_hires.png"
+        }
+    },
+    {
+        "name": "Caterpie",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Basic"
+        ],
+        "hp": "50",
+        "types": [
+            "Grass"
+        ],
+        "attacks": [
+            {
+                "cost": [
+                    "Grass"
+                ],
+                "name": "Surprise Attack",
+                "text": "Flip a coin. If tails, this attack does nothing.",
+                "damage": "20",
+                "convertedEnergyCost": 1
+            }
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/mcd19/1.png",
+            "large": "https://images.pokemontcg.io/mcd19/1_hires.png"
+        }
+    },
+    {
+        "name": "Azumarill",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Stage 1"
+        ],
+        "hp": "80",
+        "types": [
+            "Water"
+        ],
+        "abilities": [
+            {
+                "name": "Froth",
+                "text": "Once during your turn, when you play Azumarill from your hand to evolve 1 of your Active Pokémon, you may use this power. Each Defending Pokémon is now Paralyzed.",
+                "type": "Poké-Power"
+            }
+        ],
+        "attacks": [
+            {
+                "name": "Water Punch",
+                "cost": [
+                    "Water",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 2,
+                "damage": "20+",
+                "text": "Flip a coin for each Water Energy attached to Azumarill. This attack does 20 damage plus 20 more damage for each heads."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Lightning",
+                "value": "×2"
+            }
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/ex7/1.png",
+            "large": "https://images.pokemontcg.io/ex7/1_hires.png"
+        }
+    },
+    {
+        "name": "Bulbasaur",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Basic"
+        ],
+        "hp": "60",
+        "types": [
+            "Grass"
+        ],
+        "attacks": [
+            {
+                "name": "Find a Friend",
+                "cost": [
+                    "Grass"
+                ],
+                "convertedEnergyCost": 1,
+                "damage": "",
+                "text": "Search your deck for a Grass Pokémon, reveal it, and put it into your hand. Then, shuffle your deck."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fire",
+                "value": "×2"
+            }
+        ],
+        "retreatCost": [
+            "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/det1/1.png",
+            "large": "https://images.pokemontcg.io/det1/1_hires.png"
+        }
+    },
+    {
+        "name": "Venusaur",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Stage 2"
+        ],
+        "hp": "140",
+        "types": [
+            "Grass"
+        ],
+        "attacks": [
+            {
+                "name": "Giga Drain",
+                "cost": [
+                    "Grass",
+                    "Grass",
+                    "Colorless",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 4,
+                "damage": "50",
+                "text": "Remove from Venusaur the number of damage counters equal to the damage you did to the Defending Pokémon."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fire",
+                "value": "×2"
+            }
+        ],
+        "convertedRetreatCost": 4,
+        "images": {
+            "small": "https://images.pokemontcg.io/ru1/1.png",
+            "large": "https://images.pokemontcg.io/ru1/1_hires.png"
+        }
+    },
+    {
+        "name": "Absol",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Basic"
+        ],
+        "hp": "70",
+        "types": [
+            "Darkness"
+        ],
+        "attacks": [
+            {
+                "name": "Bad News",
+                "cost": [
+                    "Darkness"
+                ],
+                "convertedEnergyCost": 1,
+                "damage": "",
+                "text": "If the number of cards in your opponent's hand is at least 6, choose a number of cards there, without looking, until your opponent has 5 cards left. Have your opponent discard the cards you chose."
+            },
+            {
+                "name": "Prize Count",
+                "cost": [
+                    "Darkness",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 2,
+                "damage": "20+",
+                "text": "If you have more Prize cards left than your opponent, this attack does 20 damage plus 20 more damage."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fighting",
+                "value": "×2"
+            }
+        ],
+        "resistances": [
+            {
+                "type": "Psychic",
+                "value": "-30"
+            }
+        ],
+        "retreatCost": [
+            "Colorless"
+        ],
+        "convertedRetreatCost": 1,
+        "images": {
+            "small": "https://images.pokemontcg.io/ex3/1.png",
+            "large": "https://images.pokemontcg.io/ex3/1_hires.png"
+        }
+    },
+    {
+        "name": "Aggron",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Stage 2"
+        ],
+        "hp": "140",
+        "types": [
+            "Metal"
+        ],
+        "attacks": [
+            {
+                "name": "Second Strike",
+                "cost": [
+                    "Metal",
+                    "Metal",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 3,
+                "damage": "40",
+                "text": "If the Defending Pokémon already has any damage counters on it, this attack does 40 damage plus 40 more damage."
+            },
+            {
+                "name": "Guard Claw",
+                "cost": [
+                    "Metal",
+                    "Metal",
+                    "Colorless",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 4,
+                "damage": "60",
+                "text": "During your opponent's next turn, any damage done to Aggron by attacks is reduced by 20 (after applying Weakness and Resistance)."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fire",
+                "value": "×2"
+            }
+        ],
+        "resistances": [
+            {
+                "type": "Psychic",
+                "value": "-20"
+            }
+        ],
+        "convertedRetreatCost": 4,
+        "images": {
+            "small": "https://images.pokemontcg.io/hgss4/1.png",
+            "large": "https://images.pokemontcg.io/hgss4/1_hires.png"
+        }
+    },
+    {
+        "name": "Beedrill δ",
+        "supertype": "Pokémon",
+        "subtypes": [
+            "Stage 2"
+        ],
+        "hp": "90",
+        "types": [
+            "Grass",
+            "Metal"
+        ],
+        "abilities": [
+            {
+                "name": "Final Sting",
+                "text": "Once during your turn (before your attack), you may Knock Out Beedrill. If you do, choose 1 of your opponent's Defending Pokémon. That Pokémon is now Paralyzed and Poisoned. Put 2 damage counters instead of 1 on that Pokémon between turns. This power can't be used if Beedrill is affected by a Special Condition.",
+                "type": "Poké-Power"
+            }
+        ],
+        "attacks": [
+            {
+                "name": "Super Slash",
+                "cost": [
+                    "Grass",
+                    "Metal",
+                    "Colorless"
+                ],
+                "convertedEnergyCost": 3,
+                "damage": "50+",
+                "text": "If the Defending Pokémon is an Evolved Pokémon, this attack does 50 damage plus 30 more damage."
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Fire",
+                "value": "×2"
+            }
+        ],
+        "images": {
+            "small": "https://images.pokemontcg.io/ex11/1.png",
+            "large": "https://images.pokemontcg.io/ex11/1_hires.png"
+        }
+    }
+]

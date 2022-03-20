@@ -6,6 +6,7 @@ export type CardDocument = mongoose.Document & {
   supertype: string;
   subtypes: [string];
   types: [string];
+  abilities: IAbilities[];
   attacks: IAttacks[];
   weaknesses: [
     {
@@ -13,15 +14,30 @@ export type CardDocument = mongoose.Document & {
       value: string;
     }
   ];
-  resistance: [
+  resistances: [
     {
       type: string;
       value: string;
     }
   ];
   convertedRetreatCost: string;
-  image: string;
+  images: [
+    {
+      small: string;
+      large: string;
+    }
+  ];
 };
+
+interface IAbility {
+  name: string;
+  text: string;
+  type: string;
+}
+
+interface IAbilities extends Array<IAbility> {
+  [index: number]: IAbility;
+}
 
 interface IAttack {
   name: string;
@@ -43,9 +59,9 @@ const cardSchema = new mongoose.Schema<CardDocument>({
   types: Array,
   attacks: Array,
   weaknesses: Array,
-  resistance: Array,
+  resistances: Array,
   convertedRetreatCost: String,
-  image: String
+  images: Array
 });
 
 export const Card = mongoose.model<CardDocument>("Card", cardSchema);

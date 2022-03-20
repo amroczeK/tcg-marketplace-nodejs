@@ -8,7 +8,9 @@
     "watch": "ts-node-dev --respawn src/server.ts",
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeddata": "ts-node src/seeder.ts -i",
+    "destroydata": "ts-node src/seeder.ts -d"
   },
   "author": "Adrian Mroczek",
   "license": "ISC",
