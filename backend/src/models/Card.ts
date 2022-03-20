@@ -27,7 +27,20 @@ export type CardDocument = mongoose.Document & {
       large: string;
     }
   ];
+  availability: IAvailability
 };
+
+interface IAvailability {
+  sold: {
+    type: boolean;
+    default: false;
+  }
+  owner: {
+    id: string;
+    name: string;
+    purchased: Date
+  }
+}
 
 interface IAbility {
   name: string;
@@ -61,7 +74,8 @@ const cardSchema = new mongoose.Schema<CardDocument>({
   weaknesses: Array,
   resistances: Array,
   convertedRetreatCost: String,
-  images: Array
+  images: Array,
+  availability: Object
 });
 
-export const Card = mongoose.model<CardDocument>("Card", cardSchema);
+export const CardModel = mongoose.model<CardDocument>("Card", cardSchema);

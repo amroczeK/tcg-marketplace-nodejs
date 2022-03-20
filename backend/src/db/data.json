@@ -47,6 +47,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/pl3/1.png",
             "large": "https://images.pokemontcg.io/pl3/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -103,6 +106,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/ex12/1.png",
             "large": "https://images.pokemontcg.io/ex12/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -136,6 +142,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/xy5/1.png",
             "large": "https://images.pokemontcg.io/xy5/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -163,6 +172,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/mcd19/1.png",
             "large": "https://images.pokemontcg.io/mcd19/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -204,6 +216,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/ex7/1.png",
             "large": "https://images.pokemontcg.io/ex7/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -240,6 +255,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/det1/1.png",
             "large": "https://images.pokemontcg.io/det1/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -276,6 +294,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/ru1/1.png",
             "large": "https://images.pokemontcg.io/ru1/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -328,6 +349,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/ex3/1.png",
             "large": "https://images.pokemontcg.io/ex3/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -381,6 +405,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/hgss4/1.png",
             "large": "https://images.pokemontcg.io/hgss4/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     },
     {
@@ -423,6 +450,9 @@
         "images": {
             "small": "https://images.pokemontcg.io/ex11/1.png",
             "large": "https://images.pokemontcg.io/ex11/1_hires.png"
+        },
+        "availability": {
+            "sold": false
         }
     }
 ]
