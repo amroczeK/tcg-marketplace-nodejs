@@ -4,17 +4,14 @@ import compression from "compression";
 import MongoStore from "connect-mongo";
 import mongoose, { ConnectOptions } from "mongoose";
 import path from "path";
-import dotenv from 'dotenv'
+import dotenv from "dotenv";
 dotenv.config({ path: path.join(__dirname, ".env") });
+import { SESSION_SECRET, MONGODB_URI } from "./util/secrets";
 
 // Create Express server
 const app = express();
 
-const SESSION_SECRET: string = process.env.SESSION_SECRET || "";
-
 // Connect to MongoDB
-const MONGODB_URI: string = process.env.MONGODB_URI || "";
-
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
