@@ -4,6 +4,7 @@ import compression from "compression";
 import MongoStore from "connect-mongo";
 import mongoose, { ConnectOptions } from "mongoose";
 import { SESSION_SECRET, MONGODB_URI } from "./util/secrets";
+import { setupRouting } from "./config/routing";
 
 // Create Express server
 const app = express();
@@ -39,6 +40,7 @@ app.use(
     }),
   })
 );
+setupRouting(app);
 
 
 export default app;
