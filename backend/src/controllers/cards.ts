@@ -62,27 +62,14 @@ export const buyCard = async (req: Request, res: Response) => {
   const { id } = req.params;
   const { user } = req.body;
 
-  const client = mongoose.connection;
-  
-  const session = client.startSession();
-
-  const transactionOptions = {
-    readPreference: "primary",
-    readConcern: { level: "local" },
-    writeConcern: { w: "majority" },
-  };
+  const session = await mongoose.startSession();
   
   try {
-    const transactionResults = await session.withTransaction(async () => {
-      
-    }, transactionOptions);
-    if (transactionResults) {
-      console.log("The reservation was successfully created.");
-    } else {
-      console.log("The transaction was intentionally aborted.");
-    }
+    session.startTransaction();
+    await session.commitTransaction();
   } catch (e) {
     console.log("The transaction was aborted due to an unexpected error: " + e);
+    await session.abortTransaction();
   } finally {
     await session.endSession();
   }
