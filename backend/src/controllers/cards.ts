@@ -1,7 +1,7 @@
 import { Response, Request, NextFunction } from "express";
 import { CardModel } from "../models/Card";
 import { UserModel } from "../models/User";
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 /**
  * List all cards.
@@ -60,17 +60,25 @@ export const updateCardById = async (req: Request, res: Response) => {
  */
 export const buyCard = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const { user } = req.body;
+  const update = req.body;
 
   const session = await mongoose.startSession();
-  
   try {
     session.startTransaction();
+
+    await CardModel.findOneAndUpdate(
+      { _id: id },
+      {
+        ...update,
+      },
+      { session }
+    );
+
     await session.commitTransaction();
   } catch (e) {
-    console.log("The transaction was aborted due to an unexpected error: " + e);
     await session.abortTransaction();
   } finally {
     await session.endSession();
+    res.end();
   }
 };
